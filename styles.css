@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px white solid */ /* <- check the crazy spacing i did to make the header look good*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+
+body,
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.navcntnr {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(90px);
+  position: fixed;
+  width: 100%; /* Fixes the centering issue */
+  top: 0; /* Ensures it stays at the top of the viewport */
+  left: 0;
+}
+
+.navcntnr a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navcntnr a:hover {
+  color: rgba(255, 255, 255, 0.326);
+}
+
+header {
+  padding: 8rem 6rem 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  background: #ff4797;
+  background: linear-gradient(
+    186deg,
+    rgba(255, 71, 151, 1) 0%,
+    rgba(0, 80, 171, 1) 100%
+  );
+}
+
+header h1 {
+  font-size: 8rem;
+}
+
+header p {
+  margin-right: 50vw;
+  font-size: 1.5rem;
+}
+
+.p1 {
+  margin-right: 50vw;
+  font-size: 3rem;
+}
+
+.playmute {
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.playmute a {
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(20px);
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px white solid;
+  border-radius: 30px;
+  font-size: 1.075rem;
+  color: white;
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.playmute a:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.p2 {
+  padding-bottom: 1.5rem;
+}
+
+main {
+  padding: 6rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main h2 {
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+main p {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.raaginteractive {
+  display: grid;
+  grid-auto-columns: minmax(0, 25vw);
+  grid-auto-rows: 15vw;
+  gap: 2rem;
+  justify-content: center;
+  grid-template-areas:
+    "p1 p2 p3"
+    "p4 p5 p6"
+    "p7 p8 p9";
+  margin: 2rem;
+}
+
+.ri {
+  border: 1px rgba(255, 255, 255, 0.509) solid;
+  border-radius: 7.5px;
+  padding: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.658);
+  border-color: rgba(255, 255, 255, 0.509);
+  background-color: rgba(255, 255, 255, 0.01);
+  transition:
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ri h3 {
+  font-size: 2rem;
+}
+
+.ri p {
+  font-size: 1.05rem;
+}
+
+.ri:hover {
+  box-shadow: 0 0 0.6rem 0.6rem rgba(255, 255, 255, 0.066);
+  border-color: white;
+  color: rgba(255, 255, 255, 0.909);
+}
+
+.clist {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.clist a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.429);
+  transition: color 0.3s ease;
+}
+
+.clist a:hover {
+  color: rgba(255, 255, 255, 0.763);
+}
+
+footer {
+  padding: 4rem;
+  font-size: 1.1rem;
+  display: grid;
+  grid-auto-columns: minmax(0, 15vw);
+  grid-auto-rows: 7vw;
+
+  grid-template-areas: "f1 f1 f2 f2 f3";
+  gap: 2.5rem;
+
+  background: #ff4797;
+  background: linear-gradient(
+    186deg,
+    rgba(255, 71, 151, 1) 0%,
+    rgba(0, 80, 171, 1) 100%
+  );
+}
+
+.flist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  /* padding-left: 5rem; */
+}
+
+.flist a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.429);
+  transition: color 0.3s ease;
+}
+
+.flist a:hover {
+  color: rgba(255, 255, 255, 0.763);
+}
