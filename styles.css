@@ -1,3 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --background3to4: linear-gradient(
+    340deg,
+    rgb(61, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 28%
+  );
+  --background4to5: linear-gradient(
+    356deg,
+    rgb(45, 18, 15) 0%,
+    rgba(38, 15, 0, 1) 7%,
+    rgba(20, 20, 48, 1) 35%,
+    rgba(0, 15, 43, 1) 52%
+  );
+  --background5to6: linear-gradient(
+    356deg,
+    rgba(89, 3, 0, 1) 0%,
+    rgba(71, 27, 0, 1) 7%,
+    rgba(31, 50, 77, 1) 49%,
+    rgba(0, 55, 87, 1) 61%
+  );
+  --background6to7: linear-gradient(
+    356deg,
+    rgba(61, 16, 30, 1) 5%,
+    rgba(57, 67, 97, 1) 24%,
+    rgba(104, 118, 148, 1) 47%,
+    rgba(240, 240, 240, 1) 89%
+  );
+  --background7to8: linear-gradient(
+    160deg,
+    rgba(57, 67, 97, 1) 14%,
+    rgba(104, 118, 148, 1) 43%,
+    rgba(135, 225, 255, 1) 89%
+  );
+  --background8to9: linear-gradient(
+    160deg,
+    rgba(121, 158, 176, 1) 0%,
+    rgba(135, 225, 255, 1) 46%,
+    rgba(135, 159, 255, 1) 76%
+  );
+  /* 9am → 3pm: Daytime blue sky */
+  --background9to10: linear-gradient(
+    175deg,
+    rgba(80, 160, 210, 1) 0%,
+    rgba(120, 210, 255, 1) 45%,
+    rgba(185, 235, 255, 1) 100%
+  );
+  --background10to11: linear-gradient(
+    180deg,
+    rgba(55, 140, 200, 1) 0%,
+    rgba(100, 195, 255, 1) 50%,
+    rgba(170, 228, 255, 1) 100%
+  );
+  --background11to12: linear-gradient(
+    180deg,
+    rgba(30, 120, 190, 1) 0%,
+    rgba(80, 180, 250, 1) 55%,
+    rgba(155, 220, 255, 1) 100%
+  );
+  --background12to13: linear-gradient(
+    180deg,
+    rgba(20, 110, 185, 1) 0%,
+    rgba(65, 165, 240, 1) 50%,
+    rgba(140, 215, 255, 1) 100%
+  );
+  --background13to14: linear-gradient(
+    175deg,
+    rgba(25, 115, 185, 1) 0%,
+    rgba(75, 170, 235, 1) 45%,
+    rgba(200, 230, 245, 1) 100%
+  );
+  --background14to15: linear-gradient(
+    170deg,
+    rgba(50, 125, 180, 1) 0%,
+    rgba(110, 180, 225, 1) 40%,
+    rgba(230, 220, 185, 1) 100%
+  );
+
+  /* 3pm → 9pm: Golden hour, sunset, dusk */
+  --background15to16: linear-gradient(
+    165deg,
+    rgba(70, 120, 165, 1) 0%,
+    rgba(175, 165, 130, 1) 40%,
+    rgba(245, 200, 120, 1) 100%
+  );
+  --background16to17: linear-gradient(
+    158deg,
+    rgba(60, 90, 140, 1) 0%,
+    rgba(195, 130, 75, 1) 38%,
+    rgba(255, 165, 60, 1) 100%
+  );
+  --background17to18: linear-gradient(
+    152deg,
+    rgba(40, 55, 110, 1) 0%,
+    rgba(170, 80, 50, 1) 35%,
+    rgba(250, 120, 30, 1) 70%,
+    rgba(255, 200, 80, 1) 100%
+  );
+  --background18to19: linear-gradient(
+    150deg,
+    rgba(25, 30, 85, 1) 0%,
+    rgba(120, 40, 60, 1) 30%,
+    rgba(210, 80, 30, 1) 60%,
+    rgba(255, 140, 50, 1) 100%
+  );
+  --background19to20: linear-gradient(
+    345deg,
+    rgba(15, 15, 65, 1) 0%,
+    rgba(80, 30, 70, 1) 25%,
+    rgba(170, 55, 45, 1) 55%,
+    rgba(220, 100, 40, 1) 100%
+  );
+  --background20to21: linear-gradient(
+    345deg,
+    rgba(8, 8, 50, 1) 0%,
+    rgba(50, 18, 60, 1) 30%,
+    rgba(110, 35, 55, 1) 60%,
+    rgba(160, 60, 40, 1) 100%
+  );
+
+  /* 9pm → 3am: Night deepening */
+  --background21to22: linear-gradient(
+    340deg,
+    rgba(5, 5, 38, 1) 0%,
+    rgba(30, 12, 48, 1) 40%,
+    rgba(65, 20, 45, 1) 80%
+  );
+  --background22to23: linear-gradient(
+    340deg,
+    rgba(3, 3, 28, 1) 0%,
+    rgba(18, 8, 38, 1) 45%,
+    rgba(38, 12, 35, 1) 100%
+  );
+  --background23to24: linear-gradient(
+    340deg,
+    rgba(2, 2, 20, 1) 0%,
+    rgba(10, 5, 28, 1) 50%,
+    rgba(20, 8, 25, 1) 100%
+  );
+  --background0to1: linear-gradient(
+    340deg,
+    rgba(0, 0, 15, 1) 0%,
+    rgba(8, 4, 22, 1) 55%,
+    rgba(15, 5, 20, 1) 100%
+  );
+  --background1to2: linear-gradient(
+    340deg,
+    rgba(2, 0, 12, 1) 0%,
+    rgba(10, 3, 18, 1) 40%,
+    rgba(20, 5, 15, 1) 100%
+  );
+  --background2to3: linear-gradient(
+    340deg,
+    rgba(8, 0, 10, 1) 0%,
+    rgba(25, 5, 12, 1) 30%,
+    rgba(45, 0, 5, 1) 100%
+  );
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,11 +190,16 @@ body::-webkit-scrollbar {
   padding: 1rem;
   font-size: 1.1rem;
   background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(90px);
+  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%; /* Fixes the centering issue */
   top: 0; /* Ensures it stays at the top of the viewport */
   left: 0;
+  z-index:2;
+}
+
+.navcntnr.scrolled {
+  background-color: rgb(16, 16, 16);
 }
 
 .navcntnr a {
@@ -53,16 +217,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
-  background: #ff4797;
-  background: linear-gradient(
-    186deg,
-    rgba(255, 71, 151, 1) 0%,
-    rgba(0, 80, 171, 1) 100%
-  );
 }
 
 header h1 {
+  font-family: "Libre Caslon Text", serif;
   font-size: 8rem;
 }
 
@@ -83,22 +241,23 @@ header p {
   gap: 2rem;
 }
 
-.playmute a {
+.playmute button {
   background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
   padding: 1rem 2rem 1rem 2rem;
   border: 1px white solid;
   border-radius: 30px;
   font-size: 1.075rem;
   color: white;
   text-decoration: none;
+  z-index: 1;
 
   transition:
     color 0.3s ease,
     background-color 0.3s ease;
 }
 
-.playmute a:hover {
+.playmute button:hover {
   color: rgb(0, 0, 0);
   background-color: white;
 }
@@ -109,13 +268,20 @@ header p {
 
 main {
   padding: 6rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+#youtubeplayer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main h2 {
+  font-family: "Libre Caslon Text", serif;
   font-size: 3rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -191,31 +357,24 @@ footer {
   grid-auto-columns: minmax(0, 15vw);
   grid-auto-rows: 7vw;
 
-  grid-template-areas: "f1 f1 f2 f2 f3";
+  grid-template-areas: "f1 f1 f1 f2 f2 f2 f3";
   gap: 2.5rem;
-
-  background: #ff4797;
-  background: linear-gradient(
-    186deg,
-    rgba(255, 71, 151, 1) 0%,
-    rgba(0, 80, 171, 1) 100%
-  );
 }
 
 .flist {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   /* padding-left: 5rem; */
 }
 
 .flist a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.429);
+  color: rgb(255, 255, 255);
   transition: color 0.3s ease;
 }
 
 .flist a:hover {
-  color: rgba(255, 255, 255, 0.763);
+  color: rgba(255, 255, 255, 0.429);
 }
