@@ -23,8 +23,11 @@
         A time-obeying Hindustani music player and performance archive
       </p>
       <div class="playmute">
-        <a href="">Play</a>
-        <a href="">Mute</a>
+        <button id="playbtn">Play</button>
+        <button id="pausebtn">Pause</button>
+        <button id="mutebtn">Mute</button>
+        <button id="unmute">Unmute</button>
+        <button id="nextbtn">Next</button>
       </div>
       <p class="p2">
         Curated set of <i>Khayal</i>, <i>Dhrupad</i>, <i>Thumari</i> &
@@ -32,6 +35,11 @@
       </p>
     </header>
     <main>
+
+      <section id="youtubeplayer">
+        <div id="player"></div>
+      </section>
+
       <section id="abtprjct">
         <h2>About this Project</h2>
         <p>
@@ -54,13 +62,13 @@
           mind.
         </p>
         <p>
-          Here, is are some famous over-performed Raags, each button contains a
+          Here are some famous over-performed Raags, each button contains a
           special playlist with beautiful performances, listen and experience
           them.
         </p>
 
         <div class="raaginteractive">
-          <a class="ri bhairavi" style="grid-area: p1" href="">
+          <a class="ri bhairavi" style="grid-area: p1">
             <h3>Bhairavi</h3>
             <p>
               Known as the king of morning ragas, it represents majesty and deep
@@ -68,7 +76,7 @@
               morning atmosphere
             </p>
           </a>
-          <a class="ri ahirbhairav" style="grid-area: p2" href="">
+          <a class="ri ahirbhairav" style="grid-area: p2">
             <h3>Ahir Bhairav</h3>
             <p>
               A beautiful fusion of Bhairav and Kafi scales, it features a
@@ -77,7 +85,7 @@
             </p>
           </a>
 
-          <a class="ri bhimpalasi" style="grid-area: p3" href="">
+          <a class="ri bhimpalasi" style="grid-area: p3">
             <h3>Bhimpalasi</h3>
             <p>
               A passionate and poignant raga often associated with the late
@@ -85,7 +93,7 @@
               yearning, resolving in a beautiful sense of hope
             </p>
           </a>
-          <a class="ri yaman" style="grid-area: p4" href="">
+          <a class="ri yaman" style="grid-area: p4">
             <h3>Yaman</h3>
             <p>
               Often considered the foundational "king of ragas" for beginners.
@@ -93,7 +101,7 @@
               majestic, pleasing, and deeply devotional mood
             </p>
           </a>
-          <a class="ri bageshree" style="grid-area: p5" href="">
+          <a class="ri bageshree" style="grid-area: p5">
             <h3>Bageshree</h3>
             <p>
               An immensely popular late-night raga named after the Goddess of
@@ -101,14 +109,14 @@
               moods of deep longing and night-time serenity
             </p>
           </a>
-          <a class="ri malkauns" style="grid-area: p6" href="">
+          <a class="ri malkauns" style="grid-area: p6">
             <h3>Malkauns</h3>
             <p>
               A late-night raga that utilizes only five notes, giving it a
               mystical, somber, and deeply spiritual essence
             </p>
           </a>
-          <a class="ri darbarikanada" style="grid-area: p7" href="">
+          <a class="ri darbarikanada" style="grid-area: p7">
             <h3>Darbari Kanada</h3>
             <p>
               A majestic, grave, and heavy raga traditionally sung late at
@@ -116,14 +124,14 @@
               phrases
             </p>
           </a>
-          <a class="ri bihag" style="grid-area: p8" href="">
+          <a class="ri bihag" style="grid-area: p8">
             <h3>Bihag</h3>
             <p>
               Typically performed in the middle of the night, it is full of
               grace, romance, and joyful contemplation
             </p>
           </a>
-          <a class="ri malhar" style="grid-area: p9" href="">
+          <a class="ri malhar" style="grid-area: p9">
             <h3>Malhar</h3>
             <p>
               An ancient and powerful Hindustani classical raga deeply
@@ -141,8 +149,8 @@
           also promote Indian Classical Music.
         </p>
         <div class="clist">
-          <a href="">Project Repository</a>
-          <a href="">My Linkedin</a>
+          <a href="https://github.com/pavswap/RaagSmriti" target="_blank">Project Repository</a>
+          <a href="https://www.linkedin.com/in/paavan-swaroop-330b13256/" target="_blank">My Linkedin</a>
         </div>
       </section>
     </main>
@@ -160,10 +168,13 @@
       </p>
 
       <div class="flist" style="grid-area: f3">
-        <a href="">My Portfolio</a>
-        <a href="">LinkedIn</a>
-        <a href="">Github</a>
+        <a href="https://pavswap.github.io/Portfolio/" target="_blank">My Portfolio</a>
+        <a href="https://www.linkedin.com/in/paavan-swaroop-330b13256/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/pavswap" target="_blank">Github</a>
+        <a href="https://www.youtube.com/channel/UCvLu4_TQdoL3w9bn6Eu8OrA" target="_blank">Youtube</a>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>
