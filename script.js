@@ -48,12 +48,18 @@ const backgrounds = {
   2:  "--background2to3",
 };
 
-const variable = backgrounds[time];
-const gradient = getComputedStyle(root).getPropertyValue(variable).trim();
+function setBackground() {
+  const time = new Date().getHours();
+  const variable = backgrounds[time];
+  const gradient = getComputedStyle(root).getPropertyValue(variable).trim();
 
-header.style.background = gradient;
-footer.style.background = gradient;
+  header.style.background = gradient;
+  footer.style.background = gradient;
+}
 
+setBackground();
+
+setInterval(setBackground, 60000);
 
 //YoutubePlayer
 
