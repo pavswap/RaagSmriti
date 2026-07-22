@@ -379,7 +379,7 @@ footer {
   grid-auto-columns: minmax(0, 15vw);
   grid-auto-rows: 7vw;
 
-  grid-template-areas: "f1 f1 f1 f2 f2 f2 f3";
+  grid-template-areas: "f1 f1 f1 f3";
   gap: 2.5rem;
 }
 
@@ -452,7 +452,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "f1 f1"
-      "f2 f2"
       "f3 f3";
     grid-auto-rows: auto;
     padding: 3rem;
@@ -544,7 +543,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas:
       "f1"
-      "f2"
       "f3";
     grid-auto-rows: auto;
     padding: 2rem 1.5rem;
