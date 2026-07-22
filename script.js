@@ -61,19 +61,26 @@ setBackground();
 
 setInterval(setBackground, 60000);
 
+
+
 //YoutubePlayer
 
 let player;
 
 function onYouTubeIframeAPIReady(){
 
+    // width/height are set to fill the .player-wrapper element, which
+    // controls the actual on-screen size (and keeps a 16:9 ratio) via CSS.
+    // This is what makes the embed scale down correctly on phones/tablets
+    // instead of staying locked at a fixed 800x450px.
     player = new YT.Player("player",{
 
-        width:800,
-        height:450,
+        width:"100%",
+        height:"100%",
 
         playerVars:{
-            controls:1
+            controls:1,
+            playsinline:1
         },
 
         events:{
@@ -87,13 +94,15 @@ function onYouTubeIframeAPIReady(){
 
 function onPlayerReady(){
 
-    const time = new Date().getHours();
+    //const time = new Date().getHours();
     let playlistId;
 
     if(time >= 3 && time < 6) {
         playlistId = "PLFTrZ7Ymw0Jc";
-    } else if(time >= 6 && time < 12) {
+    } else if(time >= 6 && time < 9) {
         playlistId = "PLNgovL8XJy-s";
+    } else if(time >= 9 && time < 12) {
+        playlistId = "PLdD9nzJKjcAA";
     } else if(time >= 12 && time < 15) {
         playlistId = "PLUrGZwCANeuI";
     } else if(time >= 15 && time < 18) {
